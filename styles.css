@@ -5,11 +5,6 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body {
-    background-color: #1c1c1c;
-    align-content: center;
-}
-
 .calc-container {
     background: #1c1c1c;
     padding: 45px;
