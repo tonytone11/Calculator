@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #1c1c1c;
+    align-content: center;
+}
+
+.calc-container {
+    background: #1c1c1c;
+    padding: 45px;
+    width: 100%;
+}
+.calc-container p {
+    display: flex;
+    justify-content: flex-end;
+    color: #d4d4d2;
+    font-size: 3rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.calc-num {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "a b b c"
+    "d e f g"
+    "h i j k"
+    "l m n o"
+    "p p q r";
+}
+.space1 {
+    grid-area: a;
+    background-color: #505050;
+}
+.space2 {
+    grid-area: b;
+    background-color: #505050;
+}
+.space3 {
+    grid-area: c;
+    background-color: #ff9500;
+}
+.space4 {
+    grid-area: d;
+    background-color: #d4d4d4;
+}
+.space5 {
+    grid-area: e;
+    background-color: #d4d4d4;
+}
+.space6 {
+    grid-area: f;
+    background-color: #d4d4d4;
+}
+.space7 {
+    grid-area: g;
+    background-color: #ff9500;
+}
+.space8 {
+    grid-area: h;
+    background-color: #d4d4d4;
+}
+.space9 {
+    grid-area: i;
+    background-color: #d4d4d4;
+}
+.space10 {
+    grid-area: j;
+    background-color: #d4d4d4;
+}
+.space11{
+    grid-area: k;
+    background-color: #ff9500;
+}
+.space12 {
+    grid-area: l;
+    background-color: #d4d4d4;
+}
+.space13 {
+    grid-area: m;
+    background-color: #d4d4d4;
+}
+.space14 {
+    grid-area: n;
+    background-color: #d4d4d4;
+}
+.space15 {
+    grid-area: o;
+    background-color: #ff9500;
+}
+.space16 {
+    grid-area: p;
+    background-color: #d4d4d4;
+}
+.space17 {
+    grid-area: q;
+    background-color: #d4d4d4;
+}
+.space18 {
+    grid-area: r;
+    background-color: #ff9500;
+}
+.calc-num button {
+    padding: 70px;
+    font-size: 2.1rem;
+    border: 1px solid #1c1c1c;
+    color: #ffffff;
+}
