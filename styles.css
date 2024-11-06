@@ -111,3 +111,7 @@ body {
     border: 1px solid #1c1c1c;
     color: #ffffff;
 }
+
+button:active, button:focus {
+    filter: brightness(120%);
+}
