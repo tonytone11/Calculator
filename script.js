@@ -65,3 +65,18 @@ operationBtns.forEach(function (button) {
         })
     }
 })
+
+// functionality for typing the numbers on the calculator
+document.addEventListener("keydown", function (event) {
+    const typing = event.key;
+    // telling the function what is allowed to be typed onto the display
+    if (!isNaN(typing) || typing === "+" || typing === "-" || typing === "*" || typing === "/" || typing === ".") { // i learned that !isNaN checks for the value to be a number
+        toTheDisplay(typing); // this should apply it to the display
+    } else if (typing === "Enter") {
+        calculate(); // when you presss return on the keyboard will run calculate function
+    } else if (typing === "Backspace") {
+        deleteLast(); // when you press delete it will run delete last function
+    } else if (typing === "C") {
+        clearDisplay(); // when you press shift+C it will run clear display function
+    }
+})
