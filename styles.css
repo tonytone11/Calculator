@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+/* Display area for the results */
 .calc-container {
     background: #1c1c1c;
     padding: 45px;
@@ -18,6 +18,7 @@
     word-wrap: break-word;
     word-break: break-all;
 }
+/* Button Layout */
 .calc-num {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -28,6 +29,7 @@
     "l m n o"
     "p p q r";
 }
+/* Assigning each button with a grid area */
 .space1 {
     grid-area: a;
     background-color: #505050;
@@ -100,13 +102,33 @@
     grid-area: r;
     background-color: #ff9500;
 }
+/* Overall button styling */
 .calc-num button {
     padding: 70px;
     font-size: 2.1rem;
     border: 1px solid #1c1c1c;
     color: #ffffff;
 }
-
+/* Hover effect to show button press */
 button:active, button:focus {
     filter: brightness(120%);
+}
+/* Media queries */
+/* Mobile */
+@media (max-width: 425px) {
+    .calc-num button {
+        padding: 61.3px 0;
+    }
+}
+/* Tablet Screen */
+@media (max-width: 768px) {
+    .calc-num button {
+        padding: 61.3px 0;
+    }
+}
+/* Desktop Screen */
+@media (max-width: 1024px ) {
+    .calc-num button {
+        padding: 61.3px 0;
+    }
 }
