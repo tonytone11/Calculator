@@ -29,7 +29,7 @@ function deleteLast() {
 function calculate() {
     try {
         let result = eval(display.textContent);
-        if (result.includes("Infinity")) { // trying to change Infinity to Error
+        if (result === Infinity) { // trying to change Infinity to Error
             display.textContent = "Error";
         } else {
             display.textContent = result; // shows result
